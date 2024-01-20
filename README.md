@@ -1,5 +1,5 @@
 # Lethal-Hotkeys
-Lethal Hotkeys is a lightweight script that gives the player terminal macros that help with quality of life and make the job of ship operator easier. Script is still being added onto over time, and unstable releases will be released frequently.
+Lethal Hotkeys is a lightweight script that gives the player macros that help with quality of life. Script is still being added onto over time, and unstable releases will be released frequently.
 ## Installation
 1. Download the newest [release](https://github.com/memespost06/Lethal-Hotkeys/releases/latest)
 2. Launch Lethal Hotkeys.exe
