@@ -1,8 +1,8 @@
-﻿/*
+/*
 	Script: Lethal Hotkeys
 	Author: persondatlovesgames
-	Version: 2.0
-	Description: A script providing terminal macros for lethal comapny
+	Version: 2.1
+	Description: A script providing macros for lethal comapny
 */
 
 #SingleInstance Force
@@ -140,4 +140,20 @@ While(CurrentCode < StrLen(SpecificShutdown.value)){
 	}
 	Sleep 1700
 }
+}
+
+ChrouchSprintToggle := false
+*r::{
+Global ChrouchSprintToggle := !ChrouchSprintToggle
+if (ChrouchSprintToggle)
+	Send "{LShift Down}"
+else
+	Send "{LShift Up}"
+Loop{
+	If !ChrouchSprintToggle
+		break
+	Send "{LControl}"
+	Sleep 100
+}
+Send "{LControl Up}"
 }
