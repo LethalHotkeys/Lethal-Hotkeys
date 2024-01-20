@@ -2,7 +2,7 @@
 Lethal Hotkeys is a lightweight script that gives the player macros that help with quality of life. Script is still being added onto over time, and unstable releases will be released frequently.
 ## Installation
 1. Download the newest [release](https://github.com/memespost06/Lethal-Hotkeys/releases/latest)
-2. Launch LethalHotkeys_v#.exe
+2. Launch LethalHotkeys.exe
 3. Open Lethal Company
 
 ## Keybinds
