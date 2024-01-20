@@ -33,3 +33,6 @@ Lethal Hotkeys is a lightweight script that gives the player macros that help wi
 - Loop Shutdown all Codes - CTRL+n - Shutdowns all codes until keybind is pressed again
 
 - Delete 10 Characters - CTRL+Backspace - For deleting tons of text in terminal
+
+## New Keybinds
+- Crouch Sprint - Middle Mouse Button - Toggles running and chrouching so you can run near dogs
