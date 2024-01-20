@@ -2,7 +2,7 @@
 	Script: Lethal Hotkeys
 	Author: persondatlovesgames
 	Version: 2.1
-	Description: A script providing terminal macros for lethal company
+	Description: A script providing macros for lethal company
 */
 
 #SingleInstance Force
