@@ -1,2 +1,2 @@
 # Lethal-Hotkeys
-Advanced Lethal Company Macros
+Useful Lethal Company Macros
