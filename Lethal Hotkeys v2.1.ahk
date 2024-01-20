@@ -2,7 +2,7 @@
 	Script: Lethal Hotkeys
 	Author: persondatlovesgames
 	Version: 2.1
-	Description: A script providing macros for lethal comapny
+	Description: A script providing terminal macros for lethal company
 */
 
 #SingleInstance Force
@@ -59,11 +59,11 @@ Send("con{Enter}")
 *^k::{
 CurrentCode := 1
 While(CurrentCode < StrLen(SpecificShutdown.value)){
-	If !WinActive("Lethal Company") or GetKeyState("LWin", "P"){
+	If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
 		break
 	}
 	Send(SubStr(SpecificShutdown.value, CurrentCode, 2))
-	If !WinActive("Lethal Company") or GetKeyState("LWin", "P"){
+	If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
 		break
 	}
 	Send "{Enter}"
@@ -76,11 +76,11 @@ While(CurrentCode < StrLen(SpecificShutdown.value)){
 GlobalCodes := "b3c1c2c7d6f2h5i1j6k9l0m6m9o5p1r2r4t2u2u9v0x8y9z3"
 CurrentCode := 1
 While(CurrentCode < StrLen(GlobalCodes)){
-	If !WinActive("Lethal Company") or GetKeyState("LWin", "P"){
+	If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
 		break
 	}
 	Send(SubStr(GlobalCodes, CurrentCode, 2))
-	If !WinActive("Lethal Company") or GetKeyState("LWin", "P"){
+	If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
 		break
 	}
 	Send "{Enter}"
@@ -100,12 +100,12 @@ Loop{
 		break
 CurrentCode := 1
 While(CurrentCode < StrLen(GlobalCodes)){
-	If !WinActive("Lethal Company") or GetKeyState("LWin", "P"){
+	If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
 		GlobalCodesToggle := false
 		break 2
 	}
 	Send(SubStr(GlobalCodes, CurrentCode, 2))
-	If !WinActive("Lethal Company") or GetKeyState("LWin", "P"){
+	If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
 		GlobalCodesToggle := false
 		break 2
 	}
@@ -125,12 +125,12 @@ Loop{
 		break
 CurrentCode := 1
 While(CurrentCode < StrLen(SpecificShutdown.value)){
-	If !WinActive("Lethal Company") or GetKeyState("LWin", "P"){
+	If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
 		SpecificCodesToggle := false
 		break 2
 	}
 	Send(SubStr(SpecificShutdown.value, CurrentCode, 2))
-	If !WinActive("Lethal Company") or GetKeyState("LWin", "P"){
+	If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
 		SpecificCodesToggle := false
 		break 2
 	}
@@ -140,20 +140,4 @@ While(CurrentCode < StrLen(SpecificShutdown.value)){
 	}
 	Sleep 1700
 }
-}
-
-ChrouchSprintToggle := false
-*r::{
-Global ChrouchSprintToggle := !ChrouchSprintToggle
-if (ChrouchSprintToggle)
-	Send "{LShift Down}"
-else
-	Send "{LShift Up}"
-Loop{
-	If !ChrouchSprintToggle
-		break
-	Send "{LControl}"
-	Sleep 100
-}
-Send "{LControl Up}"
 }
