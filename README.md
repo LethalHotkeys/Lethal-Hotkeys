@@ -31,3 +31,5 @@ Lethal Hotkeys is a lightweight script that gives the player terminal macros tha
 - Shutdown all Codes - CTRL+m - Shutdowns all codes
 
 - Loop Shutdown all Codes - CTRL+n - Shutdowns all codes until keybind is pressed again
+
+- Delete 10 Characters - CTRL+Backspace - For deleting tons of text in terminal
