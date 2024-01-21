@@ -1,7 +1,7 @@
 /*
 	Script: Lethal Hotkeys
 	Author: persondatlovesgames
-	Version: 2.5
+	Version: 2.6
 	Description: A script providing macros for lethal company
 */
 
@@ -75,54 +75,12 @@ Sleep 250
 Send("con{Enter}")
 }
 
-; Drop All Loot
-DroppingLoot := false
-*XButton2::{
-	If !ChrouchSprintToggle and !SellingLoot{
-		Global DroppingLoot := true
-	Loop 4 {
-		If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
-			break
-		}
-		Send "g"
-		Sleep 100
-		Send "{WheelDown}"
-		Sleep 200
-	}
-	Send "g"
-	DroppingLoot := false
-}
-}
-
-; Sell All Loot
-SellingLoot := false
-*XButton1::{
-	If !ChrouchSprintToggle and !DroppingLoot{
-		Global SellingLoot := true
-	Loop 4 {
-		If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
-			break
-		}
-		Send "e"
-		Sleep 100
-		Send "{WheelDown}"
-		Sleep 1000
-	}
-	Send "e"
-	SellingLoot := false
-}
-}
-
 ; Hold to Scan
 *RButton::{
-If !ChrouchSprintToggle and !DroppingLoot and !SellingLoot{
 While (GetKeyState("RButton", "P")){
 	Send "{RButton}"
 	Sleep 500
 	}
-} else {
-	Send "{RButton}"
-}
 }
 
 
@@ -211,29 +169,4 @@ While(CurrentCode < StrLen(SpecificShutdown.value)){
 	}
 	Sleep 1700
 }
-}
-
-; Movement Keybinds
-ChrouchSprintToggle := false
-*MButton::{
-Global ChrouchSprintToggle := !ChrouchSprintToggle
-If ChrouchSprintToggle{
-	Send "{LControl}"
-	Send "{LShift Down}"
-}
-else
-	Send "{LShift Up}"
-Loop{
-	If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
-		Send "{LShift Up}"
-		Send "{LControl Up}"
-		ChrouchSprintToggle := false
-		break
-	}
-	If !ChrouchSprintToggle{
-		break
-	}
-	Send "{LControl}"
-	Sleep 100
-	}
 }
