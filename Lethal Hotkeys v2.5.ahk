@@ -1,7 +1,7 @@
 /*
 	Script: Lethal Hotkeys
 	Author: persondatlovesgames
-	Version: 2.4
+	Version: 2.5
 	Description: A script providing macros for lethal company
 */
 
@@ -76,8 +76,10 @@ Send("con{Enter}")
 }
 
 ; Drop All Loot
+DroppingLoot := false
 *XButton2::{
-	If !ChrouchSprintToggle{
+	If !ChrouchSprintToggle and !SellingLoot{
+		Global DroppingLoot := true
 	Loop 4 {
 		If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
 			break
@@ -88,12 +90,32 @@ Send("con{Enter}")
 		Sleep 200
 	}
 	Send "g"
+	DroppingLoot := false
+}
+}
+
+; Sell All Loot
+SellingLoot := false
+*XButton1::{
+	If !ChrouchSprintToggle and !DroppingLoot{
+		Global SellingLoot := true
+	Loop 4 {
+		If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
+			break
+		}
+		Send "e"
+		Sleep 100
+		Send "{WheelDown}"
+		Sleep 1000
+	}
+	Send "e"
+	SellingLoot := false
 }
 }
 
 ; Hold to Scan
 *RButton::{
-If !ChrouchSprintToggle{
+If !ChrouchSprintToggle and !DroppingLoot and !SellingLoot{
 While (GetKeyState("RButton", "P")){
 	Send "{RButton}"
 	Sleep 500
