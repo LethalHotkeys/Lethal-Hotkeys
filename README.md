@@ -36,3 +36,8 @@ Lethal Hotkeys is a lightweight script that gives the player macros that help wi
 
 ## New Keybinds
 - Crouch Sprint - Middle Mouse Button - Toggles running and chrouching so you can run near dogs
+
+## Roadmap
+1. Make radar booster gui able to put in multiple names with "," to ping or flash multiple boosters at once (inspiration from wurps newest video)
+2. Add rudimentary settings menu to bind any macro to any key
+3. ???
