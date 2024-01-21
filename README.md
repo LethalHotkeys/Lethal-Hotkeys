@@ -1,5 +1,5 @@
 # Lethal-Hotkeys
-Lethal Hotkeys is a lightweight script that gives the player macros that help with utility and quality of life. I recommend downloading from [releases](https://github.com/memespost06/Lethal-Hotkeys/releases/latest), as the source code will be newer but buggy. Macros only run when in Lethal Company.
+Lethal Hotkeys is a lightweight script that gives the player macros that help with utility and quality of life. Macros only run when in Lethal Company.
 ## Update
 I will be remaking Lethal Hotkeys from scratch in C# so I can fully make everything I want without multiple tedious workarounds. I will keep this up and maintain it so it doesn't break on lethal company updates, but I won't be adding new features most likely.
 
