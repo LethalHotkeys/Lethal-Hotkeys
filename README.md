@@ -21,7 +21,7 @@ I will be remaking Lethal Hotkeys from scratch in C# so I can fully make everyth
 
 - Choose Radar Booster Name - F6 - Opens a gui to specify a radar booster name for F4 and F5
 
-- Choose Codes - F7 - Opens a gui to specify codes for CTRL+K and CTRL+j
+- Choose Codes - F7 - Opens a gui to specify codes for CTRL+k and CTRL+j
 
 - Scan - CTRL+x - Scans for loot
 
