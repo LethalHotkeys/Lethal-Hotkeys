@@ -1,9 +1,11 @@
 # Lethal-Hotkeys
 Lethal Hotkeys is a lightweight script that gives the player macros that help with utility and quality of life. I recommend downloading from releases as the source code will be more up to date but buggy.
 ## Roadmap
-1. Make radar booster gui able to put in multiple names with "," to ping or flash multiple boosters at once (inspiration from wurps newest video)
-2. Add settings menu to bind any macro to any key
+1. Add settings menu to bind any macro to any key
+2. Fix minor bugs (crouch sprint sometimes not unchrouching at the end of toggle, drop all sometimes not dropping last item when you mouse wheel up by accident, and any other unfound bugs)<br/>
 3. ???
+
+~~Make radar booster gui able to put in multiple names with "," to ping or flash multiple boosters at once (inspiration from wurps newest video)~~
 ## Installation
 1. Download the newest [release](https://github.com/memespost06/Lethal-Hotkeys/releases/latest)
 2. Launch LethalHotkeys.exe (Runs in windows tray)
@@ -39,4 +41,6 @@ Lethal Hotkeys is a lightweight script that gives the player macros that help wi
 - Delete 10 Characters - CTRL+Backspace - For deleting tons of text in terminal
 
 ## New Keybinds
-- Crouch Sprint - Middle Mouse Button - Toggles running and chrouching so you can run near dogs
+- Crouch Sprint - Middle Mouse Button - Toggles running and chrouching so you can run near dogs (v2.2)
+- Drop all - Mouse Button 2 (Varies depeding on mouse) - Drops all items quickly (v2.3)
+- Multi Radar Ping/Flash - Put a comma => "," (no spaces) between radar boosters in the F6 keybind to ping or flash multiple at once (v2.3)
