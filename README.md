@@ -2,7 +2,7 @@
 Lethal Hotkeys is a lightweight script that gives the player macros that help with utility and quality of life.
 ## Roadmap
 1. Make radar booster gui able to put in multiple names with "," to ping or flash multiple boosters at once (inspiration from wurps newest video)
-2. Add rudimentary settings menu to bind any macro to any key
+2. Add settings menu to bind any macro to any key
 3. ???
 ## Installation
 1. Download the newest [release](https://github.com/memespost06/Lethal-Hotkeys/releases/latest)
