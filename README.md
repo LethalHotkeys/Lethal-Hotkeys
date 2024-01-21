@@ -44,4 +44,5 @@ Lethal Hotkeys is a lightweight script that gives the player macros that help wi
 - Crouch Sprint - Middle Mouse Button - Toggles running and chrouching so you can run near dogs (v2.2)
 - Drop all - Mouse Button 2 (Varies depeding on mouse) - Drops all items quickly (v2.3)
 - Multi Radar Ping/Flash - Put a comma => "," (no spaces) between radar boosters in the F6 keybind to ping or flash multiple at once (v2.3)
-- Hold to Scan - Right Mouse Button - Lets you hold the right mouse button to scan. Doesn't work during crouch sprint (v2.4)
+- Hold to Scan - Right Mouse Button - Lets you hold the right mouse button to scan. Doesn't work during crouch sprint, drop all, and sell all. (v2.4)
+- Sell all - Mouse Button 1 (Varies depeding on mouse) - Sells all items quickly (v2.5)
