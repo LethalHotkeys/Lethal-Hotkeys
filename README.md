@@ -39,7 +39,7 @@ I will be remaking Lethal Hotkeys from scratch in C# so I can fully make everyth
 
 - Multi Radar Ping/Flash - Put a comma => "," (no spaces) between radar boosters in the F6 keybind to ping or flash multiple at once
 
-- Hold to Scan - Right Mouse Click - Lets you hold right click to scan. Doesn't work during crouch sprint, drop all, and sell all
+- Hold to Scan - Right Mouse Click - Lets you hold right click to scan
 
 ## Mod Compatibility
 Most mods should work fine, and the mods that won't work most likely need a keybind edit in config to get working. There are too many mods to make a full list, but here are some I know for a fact.
