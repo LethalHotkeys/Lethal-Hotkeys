@@ -1,7 +1,7 @@
 /*
 	Script: Lethal Hotkeys
 	Author: persondatlovesgames
-	Version: 2.2
+	Version: 2.3
 	Description: A script providing macros for lethal company
 */
 
@@ -42,8 +42,26 @@ F7::SpecificShutdownGui.Show()
 F1::Send "view monitor{Enter}"
 F2::Send "switch{Enter}"
 F3::Send "transmit "
-F4::Send "flash " RadarBooster.value "{Enter}"
-F5::Send "ping " RadarBooster.value "{Enter}"
+F4::{
+	Global RadarBooster
+	For each, RadarBooster in StrSplit(RadarBooster.value,","){
+	If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
+	break
+	}
+	Send "flash " RadarBooster "{Enter}"
+	Sleep 50
+	}
+}
+F5::{
+	Global RadarBooster
+	For each, RadarBooster in StrSplit(RadarBooster.value,","){
+	If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
+	break
+	}
+	Send "ping " RadarBooster "{Enter}"
+	Sleep 50
+	}
+}
 
 ; Utility Keybinds
 *^x::Send "scan{Enter}"
@@ -88,6 +106,20 @@ While(CurrentCode < StrLen(GlobalCodes)){
 	Sleep 30
 	CurrentCode := CurrentCode + 2
 	}
+}
+
+; Drop All Loot
+*XButton2::{
+	Loop 4 {
+		If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
+			break
+		}
+		Send "g"
+		Sleep 100
+		Send "{WheelDown}"
+		Sleep 200
+	}
+	Send "g"
 }
 
 ; Loop Code Toggle Keybinds
