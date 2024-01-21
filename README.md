@@ -12,12 +12,13 @@ I will be remaking Lethal Hotkeys from scratch in C# so I can fully make everyth
 - View Monitor - F1 - Views ship monitor
 
 - Switch - F2 - Switches player on the monitor
+  - Use https://thunderstore.io/c/lethal-company/p/kRYstall9/FastSwitchPlayerViewInRadar if you want to switch back and forward, as F2 only goes forward
 
 - Transmit - F3 - Types in "transmit" with a space
 
-- Flash - F4 - Types in "flash" followed by a space and name of the radar booster specified in F6
+- Flash - F4 - Types in "flash" followed by a space and name of the radar booster(s) specified in F6
 
-- Ping - F5 - Types in "ping" followed by a space and name of the radar booster specified in F6
+- Ping - F5 - Types in "ping" followed by a space and name of the radar booster(s) specified in F6
 
 - Choose Radar Booster Name - F6 - Opens a gui to specify a radar booster name for F4 and F5
 
