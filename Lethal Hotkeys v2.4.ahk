@@ -1,11 +1,12 @@
 /*
 	Script: Lethal Hotkeys
 	Author: persondatlovesgames
-	Version: 2.3
+	Version: 2.4
 	Description: A script providing macros for lethal company
 */
 
 #SingleInstance Force
+#MaxThreads 255
 #HotIf WinActive("ahk_exe Lethal Company.exe")
 
 ; Set up the Specific Shutdown GUI
@@ -74,6 +75,35 @@ Sleep 250
 Send("con{Enter}")
 }
 
+; Drop All Loot
+*XButton2::{
+	If !ChrouchSprintToggle{
+	Loop 4 {
+		If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
+			break
+		}
+		Send "g"
+		Sleep 100
+		Send "{WheelDown}"
+		Sleep 200
+	}
+	Send "g"
+}
+}
+
+; Hold to Scan
+*RButton::{
+If !ChrouchSprintToggle{
+While (GetKeyState("RButton", "P")){
+	Send "{RButton}"
+	Sleep 500
+	}
+} else {
+	Send "{RButton}"
+}
+}
+
+
 ; Code Toggle Keybinds
 *^k::{
 CurrentCode := 1
@@ -106,20 +136,6 @@ While(CurrentCode < StrLen(GlobalCodes)){
 	Sleep 30
 	CurrentCode := CurrentCode + 2
 	}
-}
-
-; Drop All Loot
-*XButton2::{
-	Loop 4 {
-		If !WinActive("ahk_exe Lethal Company.exe") or GetKeyState("LWin", "P"){
-			break
-		}
-		Send "g"
-		Sleep 100
-		Send "{WheelDown}"
-		Sleep 200
-	}
-	Send "g"
 }
 
 ; Loop Code Toggle Keybinds
