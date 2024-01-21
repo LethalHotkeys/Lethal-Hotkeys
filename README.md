@@ -1,5 +1,5 @@
 # Lethal-Hotkeys
-Lethal Hotkeys is a lightweight script that gives the player macros that help with utility and quality of life. I recommend downloading from releases as the source code will be more up to date but buggy.
+Lethal Hotkeys is a lightweight script that gives the player macros that help with utility and quality of life. I recommend downloading from releases, as the source code will be more up to date but buggy.
 ## Roadmap
 1. Add settings menu to bind any macro to any key
 2. Fix minor bugs (crouch sprint sometimes not unchrouching at the end of toggle, drop all sometimes not dropping last item when you mouse wheel up by accident, and any other unfound bugs)<br/>
