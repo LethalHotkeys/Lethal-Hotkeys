@@ -3,7 +3,7 @@ Lethal Hotkeys is a lightweight script that gives the player macros that help wi
 ## Roadmap
 1. Add settings menu to bind any macro to any key
 2. Fix minor bugs (crouch sprint sometimes not unchrouching at the end of toggle, drop all sometimes not dropping last item when you mouse wheel up by accident, and any other unfound bugs)<br/>
-3. ???
+3. Add Videos / Gifs and better instructions for every keybind
 
 ~~Make radar booster gui able to put in multiple names with "," to ping or flash multiple boosters at once (inspiration from wurps newest video)~~
 ## Installation
