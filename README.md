@@ -12,7 +12,6 @@ I will be remaking Lethal Hotkeys from scratch in C# so I can fully make everyth
 - View Monitor - F1 - Views ship monitor
 
 - Switch - F2 - Switches player on the monitor
-  - Use https://thunderstore.io/c/lethal-company/p/kRYstall9/FastSwitchPlayerViewInRadar if you want to switch back and forward, as F2 only goes forward
 
 - Transmit - F3 - Types in "transmit" with a space
 
