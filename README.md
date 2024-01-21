@@ -40,3 +40,22 @@ I will be remaking Lethal Hotkeys from scratch in C# so I can fully make everyth
 - Multi Radar Ping/Flash - Put a comma => "," (no spaces) between radar boosters in the F6 keybind to ping or flash multiple at once
 
 - Hold to Scan - Right Mouse Click - Lets you hold right click to scan. Doesn't work during crouch sprint, drop all, and sell all
+
+## Mod Compatibility
+Most mods should work fine, and the mods that won't work most likely just need a keybind edit in config to get working. There are too many mods to make a full list, but here are some I know work for a fact.
+
+<ins>Works Right Away</ins><br>
+https://thunderstore.io/c/lethal-company/p/kRYstall9/FastSwitchPlayerViewInRadar/<br>
+https://thunderstore.io/c/lethal-company/p/Hox/LCTerminalAutocomplete/<br>
+https://thunderstore.io/c/lethal-company/p/red_eye/LethalAutocomplete/<br>
+https://thunderstore.io/c/lethal-company/p/NotAtomicBomb/Terminal_History/<br>
+https://thunderstore.io/c/lethal-company/p/deemodev/TerminalHistory/<br>
+https://thunderstore.io/c/lethal-company/p/twi/LethalBang/<br>
+
+<ins>Edit Kebinds To Work</ins><br>
+https://thunderstore.io/c/lethal-company/p/Tronald/TerminalCommander/<br>
+
+<ins>Not Sure</ins><br>
+https://thunderstore.io/c/lethal-company/p/FutureSavior/Hold_Scan_Button/ doesn't have any changes as I already added this feature in the macro. Just to be safe I recommend disabling this mod, even though ive tested it and nothing happened.<br>
+
+
