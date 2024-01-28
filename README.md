@@ -41,6 +41,8 @@ I will be remaking Lethal Hotkeys from scratch in C# so I can fully make everyth
 
 - Hold to Scan - Right Mouse Click - Lets you hold right click to scan
 
+- Hold Right Click - Middle Mouse Button - Lets you vote to leave
+
 ## Mod Compatibility
 Most mods should work fine, and the mods that won't work most likely need a keybind edit in config to get working. There are too many mods to make a full list, but here are some I know for a fact.
 
